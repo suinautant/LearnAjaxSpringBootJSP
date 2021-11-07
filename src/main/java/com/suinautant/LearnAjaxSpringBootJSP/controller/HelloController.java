@@ -14,6 +14,6 @@ public class HelloController {
 	@RequestMapping("/hello")
 	public void hello(HttpServletResponse response) throws IOException {
 		System.out.println("##### HELLO : TEST");
-		response.getWriter().print("<h2>HELLO WORLD</h2>");
+		response.getWriter().print("HELLO WORLD");
 	}
 }
