@@ -9,22 +9,21 @@
 </head>
 <body>
 	<h2>스프링부트 model 값 JSP 받기</h2>
-	<div class="container">
-		<table class="table table-hover table table-striped">
+	<div>
+		<table border="1">
 			<tr>
-				<th>객체
-				<th>
 				<th>번호</th>
-				<th>작성자</th>
-				<th>제목</th>
+				<th>이름</th>
+				<th>취미</th>
+				<th>객체</th>
 			</tr>
 
-			<c:forEach items="${list}" var="post">
+			<c:forEach items="${hobbys}" var="hobby">
 				<tr>
-					<th>${post }</th>
-                <th>${post.getPostId()}</th>
-                <th>${post.getNickName()}</th>
-                <th>${post.getTitle()}</th>
+					<th>${hobby.getIdx()}</th>
+					<th>${hobby.getName()}</th>
+					<th>${hobby.getHobby()}</th>
+					<th>${hobby}</th>
 				</tr>
 			</c:forEach>
 		</table>
