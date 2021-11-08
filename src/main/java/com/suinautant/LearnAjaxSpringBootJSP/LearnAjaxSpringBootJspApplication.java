@@ -12,14 +12,15 @@ import org.springframework.web.client.RestTemplate;
 
 import com.suinautant.LearnAjaxSpringBootJSP.object.Quote;
 
-@SpringBootApplication(exclude = { DataSourceAutoConfiguration.class })
+//@SpringBootApplication(exclude = { DataSourceAutoConfiguration.class })
+@SpringBootApplication
 public class LearnAjaxSpringBootJspApplication {
 
 	private static final Logger log = LoggerFactory.getLogger(LearnAjaxSpringBootJspApplication.class);
 
 	public static void main(String[] args) {
-		SpringApplication.run(LearnAjaxSpringBootJspApplication.class, args);
 		System.out.println("##### HELLO SPRING BOOT MAIN");
+		SpringApplication.run(LearnAjaxSpringBootJspApplication.class, args);
 	}
 
 	@Bean

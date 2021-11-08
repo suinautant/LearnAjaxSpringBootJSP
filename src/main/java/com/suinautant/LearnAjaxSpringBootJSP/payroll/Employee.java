@@ -1,4 +1,4 @@
-package com.suinautant.LearnAjaxSpringBootJSP.object;
+package com.suinautant.LearnAjaxSpringBootJSP.payroll;
 
 import java.util.Objects;
 

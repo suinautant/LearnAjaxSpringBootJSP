@@ -1,8 +1,6 @@
-package com.suinautant.LearnAjaxSpringBootJSP.repository;
+package com.suinautant.LearnAjaxSpringBootJSP.payroll;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-
-import com.suinautant.LearnAjaxSpringBootJSP.object.Employee;
 
 interface EmployeeRepository extends JpaRepository<Employee, Long> {
 
